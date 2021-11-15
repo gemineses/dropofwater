@@ -1,0 +1,3 @@
+C:\Users\jss99\Documents\GitHub\dropofwater\UI\UI\obj\Debug\UI.njsproj.AssemblyReference.cache
+C:\Users\jss99\Documents\GitHub\dropofwater\UI\UI\obj\Debug\UI.njsproj.CoreCompileInputs.cache
+C:\Users\jss99\Documents\GitHub\dropofwater\UI\UI\bin\Microsoft.NodejsTools.WebRole.dll
