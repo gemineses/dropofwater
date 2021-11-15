@@ -7,7 +7,7 @@ namespace Models.Models.Brain
 {
     public class Emotions
     {
-        public EnumEmotions Type { get; set; }
+        public EnumPrimitiveEmotions Type { get; set; }
         public int Level { get; set; }
     }
 }
