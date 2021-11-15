@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Models.Enums.Mind
 {
-    public enum EnumEmotions
+    public enum EnumPrimitiveEmotions
     {
         joy,
         anger,
