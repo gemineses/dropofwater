@@ -18,7 +18,7 @@ namespace Models.Models
         /// <summary>
         /// Left Side Perception
         /// </summary>
-        //public Mind BrainLeft { get; set; }
+        
 
     }
 }
