@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using Models.Models.Brain;
+using Models.Models.Senses;
 
 namespace Models.Models
 {
@@ -12,12 +13,10 @@ namespace Models.Models
         /// </summary>
         public Emotions Brain { get; set; }
         /// <summary>
-        /// Right Side Perception
+        /// Body Properties
         /// </summary>
-        ///public Mind BrainRight { get; set; }
-        /// <summary>
-        /// Left Side Perception
-        /// </summary>
+        public Matter BodyType { get; set; }
+        public Touch TouchReceptor { get; set; }
         
 
     }
