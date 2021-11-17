@@ -3,11 +3,18 @@ using System.Collections.Generic;
 using System.Text;
 using Models.Models.Brain;
 using Models.Models.Senses;
+using Models.WorldForms;
 
 namespace Models.Models
 {
-    public class Body
+    public class Body: ILifeForm
     {
+        /// <summary>
+        /// From  ID
+        /// </summary>
+        public string ID { get; set; }
+
+
         /// <summary>
         /// Average of adding right and left side of the emotions
         /// </summary>
@@ -18,6 +25,5 @@ namespace Models.Models
         public Matter BodyType { get; set; }
         public Touch TouchReceptor { get; set; }
         
-
     }
 }

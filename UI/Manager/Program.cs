@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Models.Models;
+using System;
+using WorldTrigger.Actions;
 
 namespace Manager
 {
@@ -6,7 +8,7 @@ namespace Manager
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Interaction interaction = new Interaction(new Body(), new Body());
         }
     }
 }
