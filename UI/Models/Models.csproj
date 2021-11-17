@@ -5,6 +5,7 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <ApplicationIcon />
     <StartupObject />
+    <AppDesignerFolder>WorldProperties</AppDesignerFolder>
   </PropertyGroup>
 
 </Project>
