@@ -1,0 +1,16 @@
+C:\Users\jss99\Documents\GitHub\dropofwater\UI\Providers\bin\Debug\netcoreapp3.1\Providers.exe
+C:\Users\jss99\Documents\GitHub\dropofwater\UI\Providers\bin\Debug\netcoreapp3.1\Providers.deps.json
+C:\Users\jss99\Documents\GitHub\dropofwater\UI\Providers\bin\Debug\netcoreapp3.1\Providers.runtimeconfig.json
+C:\Users\jss99\Documents\GitHub\dropofwater\UI\Providers\bin\Debug\netcoreapp3.1\Providers.runtimeconfig.dev.json
+C:\Users\jss99\Documents\GitHub\dropofwater\UI\Providers\bin\Debug\netcoreapp3.1\Providers.dll
+C:\Users\jss99\Documents\GitHub\dropofwater\UI\Providers\bin\Debug\netcoreapp3.1\Providers.pdb
+C:\Users\jss99\Documents\GitHub\dropofwater\UI\Providers\bin\Debug\netcoreapp3.1\Models.dll
+C:\Users\jss99\Documents\GitHub\dropofwater\UI\Providers\bin\Debug\netcoreapp3.1\Models.pdb
+C:\Users\jss99\Documents\GitHub\dropofwater\UI\Providers\obj\Debug\netcoreapp3.1\Providers.csproj.AssemblyReference.cache
+C:\Users\jss99\Documents\GitHub\dropofwater\UI\Providers\obj\Debug\netcoreapp3.1\Providers.AssemblyInfoInputs.cache
+C:\Users\jss99\Documents\GitHub\dropofwater\UI\Providers\obj\Debug\netcoreapp3.1\Providers.AssemblyInfo.cs
+C:\Users\jss99\Documents\GitHub\dropofwater\UI\Providers\obj\Debug\netcoreapp3.1\Providers.csproj.CoreCompileInputs.cache
+C:\Users\jss99\Documents\GitHub\dropofwater\UI\Providers\obj\Debug\netcoreapp3.1\Providers.csproj.CopyComplete
+C:\Users\jss99\Documents\GitHub\dropofwater\UI\Providers\obj\Debug\netcoreapp3.1\Providers.dll
+C:\Users\jss99\Documents\GitHub\dropofwater\UI\Providers\obj\Debug\netcoreapp3.1\Providers.pdb
+C:\Users\jss99\Documents\GitHub\dropofwater\UI\Providers\obj\Debug\netcoreapp3.1\Providers.genruntimeconfig.cache

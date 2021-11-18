@@ -14,16 +14,17 @@ namespace Models.Models
         /// </summary>
         public string ID { get; set; }
 
-
-        /// <summary>
-        /// Average of adding right and left side of the emotions
-        /// </summary>
-        public Emotions Brain { get; set; }
         /// <summary>
         /// Body Properties
         /// </summary>
-        public Matter BodyType { get; set; }
-        public Touch TouchReceptor { get; set; }
-        
+        public int Latitude { get; set; }
+        public int Longitude { get; set; }
+        public int Rise { get; set; }
+        public int Height { get; set; }
+        public int Width { get; set; }
+        public int Temperature { get; set; }
+        public int HardnessLevel { get; set; }
+        public List<Emotions> Emotion { get; set; }
+        public List<ISenses> Senses { get; set; }
     }
 }
