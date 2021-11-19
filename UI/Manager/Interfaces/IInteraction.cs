@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Models.Enums.Mind;
 using Models.Models.Brain;
 using Models.WorldForms;
 
@@ -10,7 +11,7 @@ namespace WorldTrigger.Interfaces
     {
         ILifeForm emisor { get; set; }
         ILifeForm receptor { get; set; }
-        bool CanFeelIt();
+        void SentMessage(EnumSenses emisorSenseTypeSent);
         int Distance { get; set; }
     }
 }

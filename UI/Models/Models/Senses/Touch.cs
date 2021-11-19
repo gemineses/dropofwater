@@ -10,5 +10,6 @@ namespace Models.Models.Senses
     public class Touch: ISenses
     {
         public EnumSenses Type { get; set; }
+        public string Message { get; set; }
     }
 }

@@ -9,7 +9,7 @@ namespace Models.Enums.Mind
         sight,
         smell,
         taste,
-        hear,
+        sounds,
         touch
     }
 }

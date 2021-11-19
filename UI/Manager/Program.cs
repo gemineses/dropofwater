@@ -8,7 +8,10 @@ namespace Manager
     {
         static void Main(string[] args)
         {
-            Interaction interaction = new Interaction(new Body(), new Body());
+            var object1 = new Body();
+            var object2 = new Body();
+            Interaction interaction = new Interaction(object1, object2);
+            var x = 1;
         }
     }
 }

@@ -8,6 +8,6 @@ namespace Models.Models.Brain
     public interface ISenses
     {
         public EnumSenses Type { get; set; }
-
+        public string Message { get; set; }
     }
 }
