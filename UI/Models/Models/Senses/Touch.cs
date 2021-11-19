@@ -9,7 +9,7 @@ namespace Models.Models.Senses
 {
     public class Touch: ISenses
     {
-        public EnumSenses Type { get; set; }
+        public EnumSenses Type { get => EnumSenses.touch; }
         public string Message { get; set; }
     }
 }

@@ -4,31 +4,20 @@ using Models.WorldForms;
 using System;
 using System.Collections.Generic;
 using System.Text;
-using WorldTrigger.Interfaces;
 
 namespace WorldTrigger.Actions
 {
-    public class Interaction : IInteraction
+    public static class Interaction
     {
-        public ILifeForm emisor { get; set; }
-        public ILifeForm receptor { get; set; }
-        public int Distance { get; set; }
-
-        public Interaction(ILifeForm from, ILifeForm to) {
-            emisor = from;
-            receptor = to;
-            
-        }
-
         /// <summary>
         /// Check if the receptor can feel what the emisor sends
         /// </summary>
         /// <returns></returns>
-        public void SentMessage(EnumSenses emisorSenseTypeSent)
+        public static void SentMessage(ILifeForm emisor, ILifeForm receptor, EnumSenses emisorSenseTypeSent)
         {
-            var emisorMessage = EmisorSendingMessage(emisorSenseTypeSent);
+            var emisorMessage = EmisorSendingMessage(emisor, emisorSenseTypeSent);
             if (!string.IsNullOrEmpty(emisorMessage)) {
-                ReceptorGettingMessage(emisorSenseTypeSent, emisorMessage);
+                ReceptorGettingMessage(receptor, emisorSenseTypeSent, emisorMessage);
             }
         }
 
@@ -37,7 +26,7 @@ namespace WorldTrigger.Actions
         /// </summary>
         /// <param name="emisorSenseTypeSent"></param>
         /// <returns></returns>
-        private string EmisorSendingMessage(EnumSenses emisorSenseTypeSent) {
+        private static string EmisorSendingMessage(ILifeForm emisor, EnumSenses emisorSenseTypeSent) {
             var emisorSense = emisor.Senses.Find(sense => sense.Type == emisorSenseTypeSent);
             if (emisorSense == null) {
                 return string.Empty;
@@ -50,7 +39,7 @@ namespace WorldTrigger.Actions
         /// </summary>
         /// <param name="emisorSenseTypeSent"></param>
         /// <returns></returns>
-        private void ReceptorGettingMessage(EnumSenses emisorSenseTypeSent, string emisorMessage) {
+        private static void ReceptorGettingMessage(ILifeForm receptor, EnumSenses emisorSenseTypeSent, string emisorMessage) {
             var receptorSense = receptor.Senses.Find(sense => sense.Type == emisorSenseTypeSent);
             if (receptorSense != null) {
                 receptorSense.Message = emisorMessage;

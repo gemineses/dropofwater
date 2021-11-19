@@ -7,7 +7,7 @@ namespace Models.Models.Brain
 {
     public interface ISenses
     {
-        public EnumSenses Type { get; set; }
+        public EnumSenses Type { get; }
         public string Message { get; set; }
     }
 }
