@@ -1,10 +1,10 @@
-﻿using Models.Models.Brain;
+﻿using Models.LifeFormModels.Brain;
 using Models.WorldProperties;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Models.WorldForms
+namespace Models.LifeFormModels
 {
     /// <summary>
     /// Everything in the world is a form

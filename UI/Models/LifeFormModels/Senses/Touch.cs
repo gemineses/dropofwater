@@ -1,11 +1,11 @@
 ﻿using Models.Enums.Mind;
-using Models.Models.Brain;
+using Models.LifeFormModels.Brain;
 using Models.WorldProperties;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Models.Models.Senses
+namespace Models.LifeFormModels.Senses
 {
     public class Touch: ISenses
     {

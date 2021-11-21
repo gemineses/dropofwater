@@ -1,5 +1,5 @@
 ﻿using Models.Enums.Mind;
-using Models.Models.Brain;
+using Models.LifeFormModels;
 using Models.WorldForms;
 using System;
 using System.Collections.Generic;

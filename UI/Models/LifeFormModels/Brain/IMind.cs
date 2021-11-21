@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Models.Models.Brain
+namespace Models.LifeFormModels.Brain
 {
     public interface IMind
     {

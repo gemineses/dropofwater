@@ -8,4 +8,10 @@
     <AppDesignerFolder>WorldProperties</AppDesignerFolder>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Enums\NewFolder\**" />
+    <EmbeddedResource Remove="Enums\NewFolder\**" />
+    <None Remove="Enums\NewFolder\**" />
+  </ItemGroup>
+
 </Project>

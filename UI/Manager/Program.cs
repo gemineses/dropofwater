@@ -1,7 +1,8 @@
 ﻿using Models.Enums.Mind;
-using Models.Models;
-using Models.Models.Brain;
-using Models.Models.Senses;
+using Models.LifeFormModels;
+using Models.LifeFormModels.Brain;
+using Models.LifeFormModels.Senses;
+using Models.WorldForms;
 using System;
 using System.Collections.Generic;
 using WorldTrigger.Actions;

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Models.WorldForms;
+using Services.World;
+using System;
 
 namespace Services
 {
@@ -6,7 +8,12 @@ namespace Services
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var world = new WorldGeneratorServices();
+            var planet = world.CreatePlanet(new PlanetModel() { 
+                seed = "123123",
+                worldSize = 16
+            });
+            var x = 1;
         }
     }
 }

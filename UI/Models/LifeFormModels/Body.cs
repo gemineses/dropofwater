@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Models.Models.Brain;
-using Models.Models.Senses;
+using Models.LifeFormModels.Brain;
+using Models.LifeFormModels.Senses;
 using Models.WorldForms;
 
-namespace Models.Models
+namespace Models.LifeFormModels
 {
     public class Body: ILifeForm
     {
