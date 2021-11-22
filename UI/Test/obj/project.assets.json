@@ -1253,6 +1253,57 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
+      },
+      "Manager/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Models": "1.0.0",
+          "Services": "1.0.0",
+          "WorldTrigger": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Manager.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Manager.dll": {}
+        }
+      },
+      "Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Models.dll": {}
+        }
+      },
+      "Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Services.dll": {}
+        }
+      },
+      "WorldTrigger/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/WorldTrigger.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WorldTrigger.dll": {}
+        }
       }
     }
   },
@@ -4942,13 +4993,37 @@
         "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xmldocument.nuspec"
       ]
+    },
+    "Manager/1.0.0": {
+      "type": "project",
+      "path": "../Manager/Manager.csproj",
+      "msbuildProject": "../Manager/Manager.csproj"
+    },
+    "Models/1.0.0": {
+      "type": "project",
+      "path": "../Models/Models.csproj",
+      "msbuildProject": "../Models/Models.csproj"
+    },
+    "Services/1.0.0": {
+      "type": "project",
+      "path": "../Services/Services.csproj",
+      "msbuildProject": "../Services/Services.csproj"
+    },
+    "WorldTrigger/1.0.0": {
+      "type": "project",
+      "path": "../Triggers/WorldTrigger.csproj",
+      "msbuildProject": "../Triggers/WorldTrigger.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Manager >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 16.9.4",
+      "Models >= 1.0.0",
       "NUnit >= 3.13.1",
       "NUnit3TestAdapter >= 3.17.0",
+      "Services >= 1.0.0",
+      "WorldTrigger >= 1.0.0",
       "coverlet.collector >= 3.0.2"
     ]
   },
@@ -4978,7 +5053,20 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\jss99\\Documents\\GitHub\\dropofwater\\UI\\Manager\\Manager.csproj": {
+              "projectPath": "C:\\Users\\jss99\\Documents\\GitHub\\dropofwater\\UI\\Manager\\Manager.csproj"
+            },
+            "C:\\Users\\jss99\\Documents\\GitHub\\dropofwater\\UI\\Models\\Models.csproj": {
+              "projectPath": "C:\\Users\\jss99\\Documents\\GitHub\\dropofwater\\UI\\Models\\Models.csproj"
+            },
+            "C:\\Users\\jss99\\Documents\\GitHub\\dropofwater\\UI\\Services\\Services.csproj": {
+              "projectPath": "C:\\Users\\jss99\\Documents\\GitHub\\dropofwater\\UI\\Services\\Services.csproj"
+            },
+            "C:\\Users\\jss99\\Documents\\GitHub\\dropofwater\\UI\\Triggers\\WorldTrigger.csproj": {
+              "projectPath": "C:\\Users\\jss99\\Documents\\GitHub\\dropofwater\\UI\\Triggers\\WorldTrigger.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

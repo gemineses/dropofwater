@@ -11,6 +11,32 @@
         "runtime": {
           "bin/placeholder/Models.dll": {}
         }
+      },
+      "Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Services.dll": {}
+        }
+      },
+      "WorldTrigger/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/WorldTrigger.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WorldTrigger.dll": {}
+        }
       }
     }
   },
@@ -19,11 +45,23 @@
       "type": "project",
       "path": "../Models/Models.csproj",
       "msbuildProject": "../Models/Models.csproj"
+    },
+    "Services/1.0.0": {
+      "type": "project",
+      "path": "../Services/Services.csproj",
+      "msbuildProject": "../Services/Services.csproj"
+    },
+    "WorldTrigger/1.0.0": {
+      "type": "project",
+      "path": "../Triggers/WorldTrigger.csproj",
+      "msbuildProject": "../Triggers/WorldTrigger.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Models >= 1.0.0"
+      "Models >= 1.0.0",
+      "Services >= 1.0.0",
+      "WorldTrigger >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -32,9 +70,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jss99\\Documents\\GitHub\\dropofwater\\UI\\Manager\\WorldTrigger.csproj",
-      "projectName": "WorldTrigger",
-      "projectPath": "C:\\Users\\jss99\\Documents\\GitHub\\dropofwater\\UI\\Manager\\WorldTrigger.csproj",
+      "projectUniqueName": "C:\\Users\\jss99\\Documents\\GitHub\\dropofwater\\UI\\Manager\\Manager.csproj",
+      "projectName": "Manager",
+      "projectPath": "C:\\Users\\jss99\\Documents\\GitHub\\dropofwater\\UI\\Manager\\Manager.csproj",
       "packagesPath": "C:\\Users\\jss99\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\jss99\\Documents\\GitHub\\dropofwater\\UI\\Manager\\obj\\",
       "projectStyle": "PackageReference",
@@ -55,6 +93,12 @@
           "projectReferences": {
             "C:\\Users\\jss99\\Documents\\GitHub\\dropofwater\\UI\\Models\\Models.csproj": {
               "projectPath": "C:\\Users\\jss99\\Documents\\GitHub\\dropofwater\\UI\\Models\\Models.csproj"
+            },
+            "C:\\Users\\jss99\\Documents\\GitHub\\dropofwater\\UI\\Services\\Services.csproj": {
+              "projectPath": "C:\\Users\\jss99\\Documents\\GitHub\\dropofwater\\UI\\Services\\Services.csproj"
+            },
+            "C:\\Users\\jss99\\Documents\\GitHub\\dropofwater\\UI\\Triggers\\WorldTrigger.csproj": {
+              "projectPath": "C:\\Users\\jss99\\Documents\\GitHub\\dropofwater\\UI\\Triggers\\WorldTrigger.csproj"
             }
           }
         }

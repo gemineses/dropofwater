@@ -8,9 +8,13 @@
     ".NETCoreApp,Version=v3.1": {
       "Test/1.0.0": {
         "dependencies": {
+          "Manager": "1.0.0",
           "Microsoft.NET.Test.Sdk": "16.9.4",
+          "Models": "1.0.0",
           "NUnit": "3.13.1",
           "NUnit3TestAdapter": "3.17.0",
+          "Services": "1.0.0",
+          "WorldTrigger": "1.0.0",
           "coverlet.collector": "3.0.2"
         },
         "runtime": {
@@ -868,6 +872,37 @@
             "fileVersion": "4.6.24705.1"
           }
         }
+      },
+      "Manager/1.0.0": {
+        "dependencies": {
+          "Models": "1.0.0",
+          "Services": "1.0.0",
+          "WorldTrigger": "1.0.0"
+        },
+        "runtime": {
+          "Manager.dll": {}
+        }
+      },
+      "Models/1.0.0": {
+        "runtime": {
+          "Models.dll": {}
+        }
+      },
+      "Services/1.0.0": {
+        "dependencies": {
+          "Models": "1.0.0"
+        },
+        "runtime": {
+          "Services.dll": {}
+        }
+      },
+      "WorldTrigger/1.0.0": {
+        "dependencies": {
+          "Models": "1.0.0"
+        },
+        "runtime": {
+          "WorldTrigger.dll": {}
+        }
       }
     }
   },
@@ -1331,6 +1366,26 @@
       "sha512": "sha512-A/uxsWi/Ifzkmd4ArTLISMbfFs6XpRPsXZonrIqyTY70xi8t+mDtvSM5Os0RqyRDobjMBwIDHDL4NOIbkDwf7A==",
       "path": "system.xml.xpath.xmldocument/4.3.0",
       "hashPath": "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
+    },
+    "Manager/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WorldTrigger/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
