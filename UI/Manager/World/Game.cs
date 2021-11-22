@@ -1,4 +1,5 @@
 ﻿using Manager.Interfaces;
+using Models.LifeFormModels;
 using Models.WorldForms;
 using Services.World;
 using Services.WorldInterfaces;
@@ -13,21 +14,23 @@ namespace Manager.World
     public class Game : IGame
     {
         private IWorldGeneratorServices _worldGeneratorServices = null;
-        private IWorldInteraction _worldInteraction = null;
-        public Game(IWorldGeneratorServices worldGeneratorServices, IWorldInteraction worldInteraction) {
+        private IGameRunningInteractions _gameRunningInteractions = null;
+        private IUniverseModel _universeModel = null;
+        
+        public Game(IUniverseModel universeModel, IWorldGeneratorServices worldGeneratorServices, IGameRunningInteractions gameRunningInteractions) {
+            _gameRunningInteractions = gameRunningInteractions;
+            _universeModel = universeModel;
             _worldGeneratorServices = worldGeneratorServices;
-            _worldInteraction = worldInteraction;
         }
 
-        public void StartGame(PlanetModel planetModel)
+        public void StartGame()
         {
-            planetModel = _worldGeneratorServices.CreatePlanet(planetModel);
-            
+            _universeModel.PlanetModel[0] = _worldGeneratorServices.CreatePlanet(_universeModel.PlanetModel[0]);
         }
 
         public void UpdateGame()
         {
-            
+            _gameRunningInteractions.MoveEnvironment(_universeModel.lifeForms);
         }
     }
 }

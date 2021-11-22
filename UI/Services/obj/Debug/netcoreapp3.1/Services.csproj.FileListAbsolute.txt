@@ -1,7 +1,4 @@
-C:\Users\jss99\Documents\GitHub\dropofwater\UI\Services\bin\Debug\netcoreapp3.1\Services.exe
 C:\Users\jss99\Documents\GitHub\dropofwater\UI\Services\bin\Debug\netcoreapp3.1\Services.deps.json
-C:\Users\jss99\Documents\GitHub\dropofwater\UI\Services\bin\Debug\netcoreapp3.1\Services.runtimeconfig.json
-C:\Users\jss99\Documents\GitHub\dropofwater\UI\Services\bin\Debug\netcoreapp3.1\Services.runtimeconfig.dev.json
 C:\Users\jss99\Documents\GitHub\dropofwater\UI\Services\bin\Debug\netcoreapp3.1\Services.dll
 C:\Users\jss99\Documents\GitHub\dropofwater\UI\Services\bin\Debug\netcoreapp3.1\Services.pdb
 C:\Users\jss99\Documents\GitHub\dropofwater\UI\Services\bin\Debug\netcoreapp3.1\Models.dll
@@ -13,4 +10,3 @@ C:\Users\jss99\Documents\GitHub\dropofwater\UI\Services\obj\Debug\netcoreapp3.1\
 C:\Users\jss99\Documents\GitHub\dropofwater\UI\Services\obj\Debug\netcoreapp3.1\Services.csproj.CopyComplete
 C:\Users\jss99\Documents\GitHub\dropofwater\UI\Services\obj\Debug\netcoreapp3.1\Services.dll
 C:\Users\jss99\Documents\GitHub\dropofwater\UI\Services\obj\Debug\netcoreapp3.1\Services.pdb
-C:\Users\jss99\Documents\GitHub\dropofwater\UI\Services\obj\Debug\netcoreapp3.1\Services.genruntimeconfig.cache

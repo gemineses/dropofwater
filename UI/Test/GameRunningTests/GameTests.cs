@@ -1,5 +1,8 @@
 ﻿using Manager.Interfaces;
 using Manager.World;
+using Models.LifeFormModels;
+using Models.LifeFormModels.Brain;
+using Models.LifeFormModels.Senses;
 using Models.WorldForms;
 using NUnit.Framework;
 using Services.World;
@@ -16,28 +19,63 @@ namespace Test.GameRunningTests
     public class GameTests
     {
         private IGame _gameEngineInstance = null;
+        private IGameRunningInteractions _gameRunningInteractions = null;
         private IWorldGeneratorServices _worldGeneratorServices = null;
         private IWorldInteraction _worldInteraction = null;
+        private IUniverseModel _universeModel = null;
 
         [SetUp]
         public void GameTest() {
             _worldGeneratorServices = new WorldGeneratorServices();
-            _worldInteraction = new WorldInteraction();
-            _gameEngineInstance = new Game(_worldGeneratorServices, _worldInteraction);
+            _universeModel = GenerateUniverse();
+            _worldInteraction = new WorldInteraction(_universeModel.PlanetModel[0]);
+            _gameRunningInteractions = new GameRunningInteractions(_worldInteraction);
+            _gameEngineInstance = new Game(_universeModel, _worldGeneratorServices, _gameRunningInteractions);
+        }
+
+        private IUniverseModel GenerateUniverse() {
+            return new UniverseModel()
+            {
+                lifeForms = new List<ILifeForm>() { 
+                    new Body(){ 
+                        Senses = new List<ISenses>(){ 
+                            new Touch(),
+                            new Vision()
+                        }
+                    }
+                },
+                PlanetModel = new List<PlanetModel>() { 
+                    new PlanetModel(){ 
+                        worldSize = 200
+                    }
+                }
+            };
         }
 
         [Test]
-        [TestCase(200, TestName = "Started new world")]
-        public void RunGame(int worldSize) {
+        [TestCase(TestName = "Started new world")]
+        public void RunGame() {
             //Arrange
-            var planetModel = new PlanetModel();
-            planetModel.worldSize = worldSize;
 
             //Act
-            _gameEngineInstance.StartGame(planetModel);
+            _gameEngineInstance.StartGame();
 
             //Assert
             _gameEngineInstance.UpdateGame();
+            Assert.IsNotNull(_universeModel.PlanetModel[0]);
+            Assert.IsNotNull(_universeModel.PlanetModel[0]);
+        }
+
+        [Test]
+        [TestCase(200, TestName = "Validate if the life forms are being created")]
+        public void LifeFormInstances(int worldSize) {
+            //Arrange
+
+            //Act
+            _gameEngineInstance.StartGame();
+            _gameEngineInstance.UpdateGame();
+
+            //Assert
         }
     }
 }

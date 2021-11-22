@@ -9,5 +9,7 @@ namespace WorldTrigger.Interfaces
     public interface IWorldInteraction
     {
         public void SentMessage(ILifeForm emisor, ILifeForm receptor, EnumSenses emisorSenseTypeSent);
+        public void ExploreEnvironment(ILifeForm lifeForm);
+        public void ApplyPhysicsToLifeForms(ILifeForm lifeForm);
     }
 }
