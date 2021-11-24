@@ -10,6 +10,7 @@ using Services.WorldInterfaces;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Test.Util;
 using WorldTrigger.Actions;
 using WorldTrigger.Interfaces;
 
@@ -18,6 +19,7 @@ namespace Test.GameRunningTests
     [TestFixture]
     public class GameTests
     {
+        private TestingGeneratorModels _generator = new TestingGeneratorModels();
         private IGame _gameEngineInstance = null;
         private IGameRunningInteractions _gameRunningInteractions = null;
         private IWorldGeneratorServices _worldGeneratorServices = null;
@@ -27,29 +29,10 @@ namespace Test.GameRunningTests
         [SetUp]
         public void GameTest() {
             _worldGeneratorServices = new WorldGeneratorServices();
-            _universeModel = GenerateUniverse();
+            _universeModel = _generator.GenerateUniverse();
             _worldInteraction = new WorldInteraction(_universeModel.PlanetModel[0]);
             _gameRunningInteractions = new GameRunningInteractions(_worldInteraction);
             _gameEngineInstance = new Game(_universeModel, _worldGeneratorServices, _gameRunningInteractions);
-        }
-
-        private IUniverseModel GenerateUniverse() {
-            return new UniverseModel()
-            {
-                lifeForms = new List<ILifeForm>() { 
-                    new Body(){ 
-                        Senses = new List<ISenses>(){ 
-                            new Touch(),
-                            new Vision()
-                        }
-                    }
-                },
-                PlanetModel = new List<PlanetModel>() { 
-                    new PlanetModel(){ 
-                        worldSize = 200
-                    }
-                }
-            };
         }
 
         [Test]
